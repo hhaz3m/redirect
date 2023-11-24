@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirect Script</title>
+  <script>
+    const redirectData = {
+      "redirect": {
+        "url": "https://plsdonate.me/TomkooCZ5005"
+      }
+    };
+
+    // Check if the redirect object exists
+    if (redirectData.redirect && redirectData.redirect.url) {
+      // Redirect to the specified URL
+      window.location.href = redirectData.redirect.url;
+    }
+  </script>
+</head>
+<body>
+  <!-- Optional: Content to display if the redirect script doesn't trigger -->
+  <h1>Oops! Something went wrong, if didnt redirect, then <button onclick="handleRedirect()">Click here to redirect now.</button></h1>
+</body>
+</html>
