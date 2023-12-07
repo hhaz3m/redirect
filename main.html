@@ -1,25 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hazems redirect shit</title>
-  <script>
-    const redirectData = {
-      "redirect": {
-        "url": "https://plsdonate.me/TomkooCZ5005"
-      }
-    };
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDM - Roblox Game Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #00f;
+        }
 
-    // Check if the redirect object exists
-    if (redirectData.redirect && redirectData.redirect.url) {
-      // Redirect to the specified URL
-      window.location.href = redirectData.redirect.url;
-    }
-  </script>
+        nav {
+            background-color: #000;
+            color: #00f;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+        }
+
+        nav a {
+            color: #00f;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #007;
+        }
+
+        main {
+            padding: 60px 20px 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .game-stats {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .featured-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .donation-button {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #000;
+            color: #00f;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-  <!-- Optional: Content to display if the redirect script doesn't trigger -->
-  <h1>Oops! Something went wrong, if didnt redirect, then <button onclick="handleRedirect()">Click here to redirect now.</button></h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Inventory</a>
+        <a href="#">Settings</a>
+        <!-- Add more navigation links as needed -->
+    </nav>
+
+    <main>
+        <h1>Welcome to the PDM Roblox Game Dashboard</h1>
+
+        <section class="game-stats">
+            <h2>Game Stats</h2>
+            <!-- Display dynamic game stats here (e.g., player count, high scores) -->
+        </section>
+
+        <section class="featured-item">
+            <h2>Featured Item</h2>
+            <!-- Showcase a featured in-game item with an image and description -->
+        </section>
+
+        <section class="donation-button">
+            <h2>Support the Game</h2>
+            <p>Help us improve the game by making a donation!</p>
+            <button onclick="showDonationModal()">Donate Now</button>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 PDM Game. All rights reserved.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        function showDonationModal() {
+            // Add code to display a donation modal or redirect to a donation page
+            alert('Thank you for supporting PDM!');
+        }
+
+        // Add any additional JavaScript/jQuery for interactivity here
+        // For example, you can use jQuery to handle smooth scrolling or other animations
+    </script>
 </body>
 </html>
